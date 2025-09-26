@@ -11,11 +11,11 @@ public class Car {
     private int numberWheels; //Accessible only by this class
 
     //Method: behavior of a class.
-    public int move(){
-        int x = 12;
-        return x;
+    public void move(double speed){
+        if( working && !totalled){
+            moving = true;
+            this.speed = speed;
+            System.err.println("The car is working and is not totalled.");
+        }
     }
-
-
-
 }
