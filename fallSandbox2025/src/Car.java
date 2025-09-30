@@ -8,8 +8,13 @@ public class Car {
     private boolean moving; //Accessible only by this class
     private boolean totalled; //Accessible only by this class
     private double speed; //Accessible only by this class
-    private int numberWheels; //Accessible only by this class
 
+    public Car(){
+        working = true;
+        totalled = false;
+        moving = true;
+        speed = 55;
+    }
     //Method: behavior of a class.
     public void move(double speed){
         if( working && !totalled){
