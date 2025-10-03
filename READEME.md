@@ -172,6 +172,13 @@ class CesarLabubu extends Labubu {
     protected String getOwner() {
         return "Cesar";   // 👈 only changed this piece
     }
-}```
+}
+```
+
+# 09/03/25 LECTURE
+
+**-What is a Class Object?**
+> Every class implicitly extends Object. 
+
 
 

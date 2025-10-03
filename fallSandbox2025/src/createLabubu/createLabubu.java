@@ -1,4 +1,4 @@
-package superclass;
+package createLabubu;
 
 
 public class createLabubu extends Labubu {

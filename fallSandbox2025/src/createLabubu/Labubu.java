@@ -1,4 +1,4 @@
-package superclass;
+package createLabubu;
 public class Labubu {
     private String labubuName;
     private String labubuOwner;
@@ -21,4 +21,5 @@ public class Labubu {
             + " | Labubu Age: " + labubuAge 
             + " | R/F: " + authenticityCheck);
     }
+
 }
