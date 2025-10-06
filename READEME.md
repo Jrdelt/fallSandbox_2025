@@ -175,10 +175,59 @@ class CesarLabubu extends Labubu {
 }
 ```
 
-# 09/03/25 LECTURE
+# 10/03/25 LECTURE
 
 **-What is a Class Object?**
 > Every class implicitly extends Object. 
+
+
+
+
+# 10/06/26
+
+**-What are some ways to read files in JAVA?**
+
+> **IMPORT STATEMENTS**
+```java
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileNotFoundException;
+```
+> File: represents a file path.
+> FileReader: reads file as characters.
+> BufferedReader: efficient reading line by line.
+
+**Example Of FileReading**
+```java
+try {
+    File file = new File("file_Name"); //Path to your new file. Naming to variable the file itself.
+    FileReader fr; // Instantiating a java class to read from .txt or .csv  
+
+    fr = new FileReader(file); //Creating a new Object 
+
+    BufferedReader br = new BufferedReader(fr); //The object above is needed for the BufferedReader to read an object efficiently.
+
+    String line; //Just creating a variable with the type String and name line.
+
+    while((line = br.readLine()) != null){ 
+        // br.readLine() is assigning the line of text from the file we provided to the variable line
+        // if the the it reads is empty := null, the while loop will stop.
+
+        System.out.println(line); //Simply printing each line that is assigned from the br.readLine();
+    }
+    br.close();
+    
+    catch(fileNotFoundException e){
+        e.printStackTrace();
+    } catch (IOException e){
+        e.PrintStackTrack();
+    }
+
+}
+```
+
+
 
 
 
