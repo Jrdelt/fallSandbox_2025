@@ -1,4 +1,4 @@
-package superclass;
+package randomShit.practice.createLabubu;
 
 
 public class createLabubu extends Labubu {
