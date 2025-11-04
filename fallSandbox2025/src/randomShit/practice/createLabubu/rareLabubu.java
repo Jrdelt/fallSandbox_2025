@@ -1,5 +1,5 @@
 
-package createLabubu;
+package randomShit.practice.createLabubu;
 
 public class rareLabubu extends Labubu{
 

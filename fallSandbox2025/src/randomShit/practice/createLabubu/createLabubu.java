@@ -1,4 +1,4 @@
-package createLabubu;
+package randomShit.practice.createLabubu;
 
 
 public class createLabubu extends Labubu {
